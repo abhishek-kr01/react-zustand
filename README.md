@@ -1,16 +1,61 @@
-# React + Vite
+# React Zustand Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is for learning and practicing state management in **React using Zustand**.  
+It demonstrates how to manage global state using **feature-based stores**, selective subscriptions, and async API calls.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React (Vite)
+- Zustand (State Management)
+- JavaScript (ES6+)
 
-## React Compiler
+## 📁 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+src/
+├─ components/
+│ ├─ Counter.jsx
+│ ├─ CounterButton.jsx
+│ ├─ CounterValue.jsx
+│ ├─ Navbar.jsx
+│ └─ Posts.jsx
+│
+├─ store/
+│ ├─ appStore.js
+│ ├─ counterStore.js
+│ └─ postsStore.js
+│
+├─ App.jsx
+└─ main.jsx
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Zustand Stores
+
+### ✅ Counter Store (`counterStore.js`)
+Manages counter state and actions:
+- count
+- increase
+- decrease
+- reset
+
+Used with selective subscriptions for better performance.
+
+### ✅ App Store (`appStore.js`)
+Manages application-level state:
+- user authentication (login/logout)
+- theme toggle (light/dark)
+
+### ✅ Posts Store (`postsStore.js`)
+Handles async API data:
+- fetches posts from JSONPlaceholder API
+- manages loading and error states
+
+API Used:  
+https://jsonplaceholder.typicode.com/posts?_limit=5
+
+## 🎯 Key Concepts Practiced
+
+- Feature-based Zustand stores
+- Selective state subscriptions
+- Async actions inside Zustand
+- Global UI state handling
+- Separation of concerns between UI and state
