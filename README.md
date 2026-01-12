@@ -9,8 +9,8 @@ It demonstrates how to manage global state using **feature-based stores**, selec
 - Zustand (State Management)
 - JavaScript (ES6+)
 
-## Project Structure
-
+## 📁 Project Structure
+```
 src/
 ├─ components/
 │ ├─ Counter.jsx
@@ -26,7 +26,7 @@ src/
 │
 ├─ App.jsx
 └─ main.jsx
-
+```
 
 ## 🧠 Zustand Stores
 
